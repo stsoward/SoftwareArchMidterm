@@ -4,11 +4,13 @@
 #include "Application.h"
 #include <iostream>
 #include "../Core/Core.h"
+#include <boost/locale.hpp>
 using namespace std;
+using namespace boost::locale;
 
 void Pickup_Item(int item_id) {
 	// do something
-	cout << "Pickup Item" << endl;
+	cout << translate("item","Pickup Item") << endl;
 	Load_Inventory();
 }
 
@@ -32,5 +34,5 @@ double PC_Move_Z(bool canMove) {
 
 void Turn_Character(int deg) {
 	//turn character based on given degrees
-	cout << "Character turns" << endl;
+	cout << translate("character", "Character turns") << endl;
 }

@@ -5,12 +5,14 @@
 #include <iostream>
 #include "../Core/Core.h"
 #include "../Application/Application.h"
+#include <boost/locale.hpp>
 using namespace std;
+using namespace boost::locale;
 
 void Show_Minimap() {
 	//do something
 	Build_Map();
-	cout << "Show Minimap" << endl;
+	cout << translate("context","Show Minimap") << endl;
 }
 
 void Show_HP() {

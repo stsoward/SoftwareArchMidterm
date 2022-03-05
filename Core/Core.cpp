@@ -3,19 +3,22 @@
 #include <limits.h>
 #include "Core.h"
 #include <iostream>
+#include <boost/locale.hpp>
+
 using namespace std;
+using namespace boost::locale;
 
 void Build_Map() {
 	//do something
-	cout << "Build Map" << endl;
+	cout << translate("map", "Build Map") << endl;
 }
 
 void Load_Inventory() {
 	//do something
-	cout << "Load the Inventory" << endl;
+	cout << translate("Load the Inventory") << endl;
 }
 
 void Init_Engine() {
 	//do something
-	cout << "Start the Engine" << endl;
+	cout << translate("Start the Engine") << endl;
 }

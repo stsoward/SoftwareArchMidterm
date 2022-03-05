@@ -3,11 +3,13 @@
 #include <limits.h>
 #include "AI.h"
 #include <iostream>
+#include <boost/locale.hpp>
 using namespace std;
+using namespace boost::locale;
 
 void AI_Spawn(double x, double y, double z) {
 	// do something
-	cout << "Spawn AI" << endl;
+	cout << translate("computer","Spawn AI") << endl;
 }
 
 bool AI_Attack(bool inRange, bool pc_Visible) {

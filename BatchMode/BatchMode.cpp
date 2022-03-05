@@ -10,6 +10,16 @@
 
 int main()
 {
+    boost::locale::generator gen;
+
+    //std::locale::global(gen(""));
+
+    gen.add_messages_path(".");
+    gen.add_messages_domain("messages");
+
+    // Generate locales and imbue them to iostream
+    std::locale::global(gen("de_DE.UTF-8"));
+    std::cout.imbue(std::locale());
 
     std::cout << "Game being run in Batch Mode\n";
 

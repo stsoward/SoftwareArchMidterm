@@ -3,11 +3,13 @@
 #include <limits.h>
 #include "Abilities.h"
 #include <iostream>
+#include <boost/locale.hpp>
 using namespace std;
+using namespace boost::locale;
 
 void Enable_DoubleJump() {
 	//do something
-	cout << "Allow Double Jump" << endl;
+	cout << translate("jump","Allow Double Jump") << endl;
 }
 
 void Magic_Light() {

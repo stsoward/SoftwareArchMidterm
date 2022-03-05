@@ -3,11 +3,13 @@
 #include <limits.h>
 #include "DevUtils.h"
 #include <iostream>
+#include <boost/locale.hpp>
 using namespace std;
+using namespace boost::locale;
 
 void GodMode() {
 	//do something
-	cout << "God Mode Engage" << endl;
+	cout << translate("context","God Mode Engage") << endl;
 }
 
 void NukeMap() {

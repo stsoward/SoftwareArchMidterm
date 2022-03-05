@@ -3,12 +3,14 @@
 #include <limits.h>
 #include "Controls.h"
 #include <iostream>
+#include <boost/locale.hpp>
 using namespace std;
+using namespace boost::locale;
 
 
 void Jump_Input() {
 	// do something
-	cout << "Jump" << endl;
+	cout << translate("jump","Jump") << endl;
 }
 
 void Move_Input_X() {
